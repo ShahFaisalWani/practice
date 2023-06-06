@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "booktree-388306",
+  "private_key_id": "b8f33ee08fb39e98c92954b2c793b49b1afa001d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQGRo6fP325lan\n897JDadnPM5oJACOwvzipD6pF9um8YwYoQmcOmgxD/YRCVctvNtMFsf3VlsQTE65\nni6OP+Shnc0HTBMO8fZnbWn2W9gDdmL8i0pVQMf+y6Gr/NIfpEfyew5ohstYqo57\nMf6IfdCDO0B85rlXLHTKuhMrcYjsVwAyWRJneF9FQo/yo/j/lAVi4KwBR+B+SD37\nqWh72rsuYSJ3uI4atgskhU33Hn4spJIJFOcE5nuf6/XqnywV27ZVp/KgkSLF3UDt\njAdA4kDbed42cEkcKcudIqQKORv5cAIvwm5FN88Ui/GuIFXpr6f5ZHzBfmrQWDIS\nu1tefPOFAgMBAAECggEAPn+7i+NsVxH45rpsp8+s/mmZyFc/v6C6WMthcmGS+8HC\nBMeg3kYAcvPLQHSgtUDqUCDrb9KEyRFR95eVfe2cmhmNsWpcsvlius92qqIM74VH\n13dyHMa3CkRYSxJEfXJWlXH18tjBC+E1p7RtMMswq6lJBfo5of/dF+HozfxsViaD\nwNC/SS7N/o2CqQAAfSegLYN9rckZiPSnvOY41D8iv4A40gy7RiUKZwTAbagGRkl+\nCI804S2wX6Vs6hGwle1EyLtoW8EIP2vtEd9946PY+N2f0koE2aHNvUlMeBTM247j\nlKP2xGT8vKzy0qmWrATdiyy0EW3kv84M2mhcS7HRJQKBgQD+akAbUVXNlOQBkaV0\n/JC2UfA96TwbUXn0MXXclGKoZuNcvTR9WJqVTFfiEJz5sul71FqBGsgC7fFUeEav\nQj9iPsmOG1GJ5O4/oLDAcqCpAM3JeC0X6dCOwkULdgJvpXeXgmlk+zabAIq3XblD\nheUVo8f4Jwn9o/NuH7/drWS42wKBgQDRZPvyeF6Jw3gE+a2BzHax7+UWEJIAo26y\ncW9W2+gzDV+sBl+hi1WT40uxqPsgOFbEIvISW6fB1mLGzpB7yoVxAII3h7bqYdx9\nrj1BRr+kC2//J3VQ6QLskRt02JwBPZBnnSKTAaruk+Kk05PIWdWolmD5AbK16F/D\nM6wUTWADHwKBgHF5lJRap8mlQjlM7B6M1ELtsxj6IZwRsDJxqR80c/imw3xGy9Wo\nonI69evX+xwIZ8magq+Y8WMVHBHP/78F7l10odOnbavyly18D7oWpoAa4q6c0oga\n+rHiBofBH/8KL5g9S6MFxWpHSJfWzt5GJ1KKlZOiXftqmBYjRSGryAQHAoGBAJ9O\nOPBr62DcOb9vRTXvHI6beKqkyK97p4hTDOYEQFA26Ia0AqWgn+b3kmsDqKsGsdxe\nydR1rtemB1hBZ2MG3SbvwCIHOn5vHZTwruGutbZUjUyN9I8t92+LplvrQCUhdW+e\n+OLm7ei80j2cSl6vGgI9BmHrjM8gj1qvQUfg5h75AoGAcAkHm3PbDYNsZH4JuRdz\nx2tH8pFBxu3vJ0DOgIO9usUsOirCBf+wBdH96wtaC1uUKtba1Cd8HS6ct/33cGaD\ngwH0/J1Iq8VqI6lZZo6Bd3SPLfiXXOZCdeWoHR7l04JkSLxACTufMGbKttsFnCK3\n3pCZthZ9vAZNuAhYhMq9LNU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "booktree-img@booktree-388306.iam.gserviceaccount.com",
+  "client_id": "117629669171545845517",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/booktree-img%40booktree-388306.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
