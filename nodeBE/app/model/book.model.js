@@ -128,10 +128,22 @@ Book.search = (keyword, result) => {
       return;
     }
     if (!res.length) {
+      console.log(q);
       result({ kind: "not_found" }, null);
       return;
     }
     result(null, res);
+  });
+};
+
+Book.getByISBN = (ISBN, result) => {
+  const q = `SELECT * from books WHERE ISBN = ${ISBN}`;
+
+  sql.query(q, (err, res) => {
+    if (err) {
+      return result(err, null);
+    }
+    return result(null, res);
   });
 };
 

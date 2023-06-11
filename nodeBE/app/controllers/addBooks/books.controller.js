@@ -175,15 +175,24 @@ const searchBooks = (req, res) => {
   const keyword = req.query.keyword;
   Book.search(keyword, (err, data) => {
     if (err) {
-      if ((err.kind = "not_found")) {
-        res.status(200).send([{}]);
-        return;
-      }
       res.status(500).send({
         message: err.message || "Some error occured while retriveing data.",
       });
     } else {
       res.status(200).json(data);
+    }
+  });
+};
+
+const getBookByISBN = (req, res) => {
+  const ISBN = req.params.ISBN;
+  Book.getByISBN(ISBN, (err, data) => {
+    if (err) {
+      return res.status(500).send({
+        message: err.message || "Some error occured while retriveing data.",
+      });
+    } else {
+      return res.status(200).json(data);
     }
   });
 };
@@ -197,4 +206,5 @@ module.exports = {
   getBooksBySupplier,
   searchBooks,
   getBooksByPage,
+  getBookByISBN,
 };

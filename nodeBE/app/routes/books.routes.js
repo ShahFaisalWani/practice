@@ -12,5 +12,6 @@ module.exports = (app) => {
   router.get("/supplier/:supplier_name", books_controller.getBooksBySupplier);
   router.get("/search", books_controller.searchBooks);
   router.get("/page", books_controller.getBooksByPage);
+  router.get("/ISBN/:ISBN", books_controller.getBookByISBN);
   app.use("/book", router);
 };
