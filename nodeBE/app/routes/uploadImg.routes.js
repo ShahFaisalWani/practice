@@ -1,5 +1,5 @@
 module.exports = (app) => {
-  const uploadImg_controller = require("../controllers/uploadImg/uploadImg.controller");
+  const uploadImg_controller = require("../controllers/uploadImg.controller");
   const upload = require("multer")({ destination: "/upload" }).single(
     "cover_img"
   );

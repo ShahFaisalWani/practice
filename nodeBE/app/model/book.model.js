@@ -1,7 +1,5 @@
-const {
-  pagespeedonline,
-} = require("googleapis/build/src/apis/pagespeedonline");
 const sql = require("../config/db/db.config");
+const limit = 5;
 
 //Constructor
 const Book = function (book) {
@@ -96,6 +94,21 @@ Book.getBySupplier = (supplier_name, result) => {
     }
   );
 };
+//genre author publisher
+Book.getBySpecific = (key, val, offset, result) => {
+  const q = `SELECT * FROM books WHERE ${key} LIKE '%${val}%' LIMIT ${limit} OFFSET ${offset}`;
+  console.log(q);
+  sql.query(q, (err, res) => {
+    if (err) {
+      console.log("Query error: " + err);
+      return result(err, null);
+    }
+    if (!res.length) {
+      return result({ kind: "not_found" }, null);
+    }
+    return result(null, res);
+  });
+};
 
 Book.getByPage = (limit, result) => {
   const q = `SELECT * FROM books ORDER BY ISBN
@@ -112,13 +125,13 @@ Book.getByPage = (limit, result) => {
   });
 };
 
-Book.search = (keyword, result) => {
+Book.search = (keyword, offset, result) => {
   const q = `
     SELECT * FROM books
     WHERE title LIKE '%${keyword}%' OR
           author LIKE '%${keyword}%' OR
           genre LIKE '%${keyword}%' OR
-          publisher LIKE '%${keyword}%'
+          publisher LIKE '%${keyword}%' LIMIT ${limit} OFFSET ${offset}
   `;
 
   sql.query(q, (err, res) => {
@@ -139,6 +152,29 @@ Book.search = (keyword, result) => {
 Book.getByISBN = (ISBN, result) => {
   const q = `SELECT * from books WHERE ISBN = ${ISBN}`;
 
+  sql.query(q, (err, res) => {
+    if (err) {
+      return result(err, null);
+    }
+    return result(null, res);
+  });
+};
+
+//TODO
+Book.getTopSales = (ISBN, result) => {
+  const q = `SELECT * from books WHERE ISBN = ${ISBN}`;
+
+  sql.query(q, (err, res) => {
+    if (err) {
+      return result(err, null);
+    }
+    return result(null, res);
+  });
+};
+
+Book.getTableData = (table_name, result) => {
+  const q = `SELECT * from ${table_name} WHERE 1`;
+  console.log(q);
   sql.query(q, (err, res) => {
     if (err) {
       return result(err, null);
